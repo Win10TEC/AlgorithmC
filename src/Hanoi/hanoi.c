@@ -3,14 +3,14 @@
 void move(int no,int x,int y){
 	if(no>1)
 		move(no-1,x,6-x-y);
-	printf("\n‰~”Õ[%d]‚ğ%d²‚©‚ç%d²‚ÖˆÚ“®\n",no,x,y);
+	printf("\nï¿½~ï¿½ï¿½[%d]ï¿½ï¿½%dï¿½ï¿½ï¿½ï¿½ï¿½ï¿½%dï¿½ï¿½ï¿½ÖˆÚ“ï¿½\n",no,x,y);
 	if(no>1)
 		move(no-1,6-x-y,y);
 }
 int hano1_main(void){
 	int n;
-	printf("ƒnƒmƒC‚Ì“ƒ\n‰~”Õ‚Ì–‡”F");
-	scanf_s("%d",&n);
+	printf("ï¿½nï¿½mï¿½Cï¿½Ì“ï¿½\nï¿½~ï¿½Õ‚Ì–ï¿½ï¿½ï¿½ï¿½F");
+	scanf("%d",&n);
 	move(n,1,3);
 	return 0;
 }

@@ -10,7 +10,7 @@ Menu SelectMenu(void){
 	do
 	{
 		printf("(1)ハノイの塔　(0)終了");
-		scanf_s("%d",&ch);
+		scanf("%d",&ch);
 
 	} while (ch< TERMINATE || ch>Hanoi1);
 	return (Menu)ch;

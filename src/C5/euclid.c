@@ -10,17 +10,13 @@ int gcd(int x,int y){
 int emain(void){
 	int x,y;
 	emaintest();
-	puts("2‚Â‚Ì®”‚ÌÅ‘åŒö–ñ”‚ğ‹‚ß‚Ü‚·B");
-	printf("®”‚ğ“ü—Í‚¹‚æF");
-	scanf_s("%d",&x);
+	puts("2ï¿½Â‚Ìï¿½ï¿½ï¿½ï¿½ÌÅ‘ï¿½ï¿½ï¿½ñ”‚ï¿½ï¿½ï¿½ï¿½ß‚Ü‚ï¿½ï¿½B");
+	printf("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í‚ï¿½ï¿½ï¿½F");
+	scanf("%d",&x);
 
-	printf("®”‚ğ“ü—Í‚¹‚æF");
-	scanf_s("%d",&y);
+	printf("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í‚ï¿½ï¿½ï¿½F");
+	scanf("%d",&y);
 
-	printf("Å‘åŒö–ñ”‚Í%d‚Å‚·B\n",gcd(x,y));
+	printf("ï¿½Å‘ï¿½ï¿½ï¿½ñ”‚ï¿½%dï¿½Å‚ï¿½ï¿½B\n",gcd(x,y));
 	return 0;
-}
-
-int emaintest(void){
-int x=5,y=10;
 }

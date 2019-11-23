@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<string.h>
 char *nspace(char *s,int n){
-	//nŒÂ‚ÌƒXƒy[ƒX•¶š‚ğ•Ô‚·
+	//nï¿½Â‚ÌƒXï¿½yï¿½[ï¿½Xï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô‚ï¿½
 	int i;
 	for(i=0;i<n;i++){
 		s[i]=' ';
@@ -20,7 +20,7 @@ int bf_match(const char txt[],const char pat[],int &cnt){
 	
 	while (txt[pt]!= '\0' && pat[pp]!= '\0')
 	{
-		printf("%s pt=%d pp=%d\n",txt,pt,pp);//ƒeƒLƒXƒg
+		printf("%s pt=%d pp=%d\n",txt,pt,pp);//ï¿½eï¿½Lï¿½Xï¿½g
 		cnt++;
 		if(txt[pt]==pat[pp]){
 			r="+";
@@ -39,9 +39,9 @@ int bf_match(const char txt[],const char pat[],int &cnt){
 
 		}
 		
-		printf("%s%s\t",nspace(s,x),r);//”äŠrˆÊ’u
+		printf("%s%s\t",nspace(s,x),r);//ï¿½ï¿½rï¿½Ê’u
 		printf("x=%d\n",x);
-		printf("%s%s\t",nspace(s,y),pat);//ƒpƒ^[ƒ“
+		printf("%s%s\t",nspace(s,y),pat);//ï¿½pï¿½^ï¿½[ï¿½ï¿½
 		printf("y=%d\n",y);
 		printf("\n");
 	}
@@ -56,7 +56,7 @@ int bm_match(const char txt[],const char pat[]){
 	int pp=strlen(pat) -1;
 	int cntn=0;
 	while (pt == 0 && txt[pt] == pat[0]){
-		printf("%s pt=%d pp=%d\n",txt,pt,pp);//ƒeƒLƒXƒg
+		printf("%s pt=%d pp=%d\n",txt,pt,pp);//ï¿½eï¿½Lï¿½Xï¿½g
 		
 		if(txt[pt]==pat[pp]){
 			pt--;
@@ -81,23 +81,23 @@ void list8_12(void)
 	char s2[256];
 	int cnt= 0;
 
-	puts("—Í‚Ü‚©‚¹–@");
+	puts("ï¿½Í‚Ü‚ï¿½ï¿½ï¿½ï¿½@");
 
-	printf("ƒeƒLƒXƒg:");
-	scanf_s("%s",s1,sizeof(s1));
+	printf("ï¿½eï¿½Lï¿½Xï¿½g:");
+	scanf("%s",s1,sizeof(s1));
 
-	printf("ƒpƒ^[ƒ“:");
-	scanf_s("%s",s2,sizeof(s2));
+	printf("ï¿½pï¿½^ï¿½[ï¿½ï¿½:");
+	scanf("%s",s2,sizeof(s2));
 
 	idx=bf_match(s1,s2,cnt);
 
 	if(idx==-1){
-		puts("ƒeƒLƒXƒg’†‚Éƒpƒ^[ƒ“‚ª‘¶İ‚µ‚Ä‚¢‚Ü‚¹‚ñB");
+		puts("ï¿½eï¿½Lï¿½Xï¿½gï¿½ï¿½ï¿½Éƒpï¿½^ï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½İ‚ï¿½ï¿½Ä‚ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½B");
 	}
 	else{
-		printf("%d•¶š–Ú‚Éƒ}ƒbƒ`‚µ‚Ü‚·B\n",idx+1);
+		printf("%dï¿½ï¿½ï¿½ï¿½ï¿½Ú‚Éƒ}ï¿½bï¿½`ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½B\n",idx+1);
 	}
-	printf("”äŠr‚µ‚½‰ñ”‚Í%d‚Å‚µ‚½B\n",cnt);
+	printf("ï¿½ï¿½rï¿½ï¿½ï¿½ï¿½ï¿½ñ”‚ï¿½%dï¿½Å‚ï¿½ï¿½ï¿½ï¿½B\n",cnt);
 }
 
 void list8_9(void){
@@ -106,24 +106,24 @@ void list8_9(void){
 	char s2[256];
 	int cnt= 0;
 
-	puts("—Í‚Ü‚©‚¹–@");
+	puts("ï¿½Í‚Ü‚ï¿½ï¿½ï¿½ï¿½@");
 
-	printf("ƒeƒLƒXƒg:");
-	scanf_s("%s",s1,sizeof(s1));
+	printf("ï¿½eï¿½Lï¿½Xï¿½g:");
+	scanf("%s",s1,sizeof(s1));
 
-	printf("ƒpƒ^[ƒ“:");
-	scanf_s("%s",s2,sizeof(s2));
+	printf("ï¿½pï¿½^ï¿½[ï¿½ï¿½:");
+	scanf("%s",s2,sizeof(s2));
 
 	idx=bm_match(s1,s2);
 
 
 	if(idx==-1){
-		puts("ƒeƒLƒXƒg’†‚Éƒpƒ^[ƒ“‚ª‘¶İ‚µ‚Ä‚¢‚Ü‚¹‚ñB");
+		puts("ï¿½eï¿½Lï¿½Xï¿½gï¿½ï¿½ï¿½Éƒpï¿½^ï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½İ‚ï¿½ï¿½Ä‚ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½B");
 	}
 	else{
-		printf("%d•¶š–Ú‚Éƒ}ƒbƒ`‚µ‚Ü‚·B\n",idx+1);
+		printf("%dï¿½ï¿½ï¿½ï¿½ï¿½Ú‚Éƒ}ï¿½bï¿½`ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½B\n",idx+1);
 	}
-	printf("”äŠr‚µ‚½‰ñ”‚Í%d‚Å‚µ‚½B\n",cnt);
+	printf("ï¿½ï¿½rï¿½ï¿½ï¿½ï¿½ï¿½ñ”‚ï¿½%dï¿½Å‚ï¿½ï¿½ï¿½ï¿½B\n",cnt);
 }
 
 int main(void)

@@ -1,9 +1,4 @@
 language: cpp
-compiler:
-    - gcc-4.8
 script:
-    - g++-4.8 -std=c++11 -Wall -Wextra -pedantic src/cTest.c && ./a.out
-install:
-    - sudo add-apt-repository --yes ppa:ubuntu-toolchain-r/test
-    - sudo apt-get -qq update
-    - sudo apt-get -qq install g++-4.8
+  - g++ --version
+  - g++ -Wall -Wextra -pedantic tests/cTest.c && ./a.out
