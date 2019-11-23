@@ -1,6 +1,5 @@
 # C言語によるアルゴリズム（C++ Algorithm）
-## CI
-Travis CI
+## CI - Travis CI
 [![Build Status](https://travis-ci.org/Win10TEC/C_Algorithm.svg?branch=master)](https://travis-ci.org/Win10TEC/C_Algorithm)
 
 ## 概要
