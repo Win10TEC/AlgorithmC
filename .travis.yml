@@ -2,7 +2,7 @@ language: cpp
 compiler:
     - gcc-4.8
 script:
-    - g++-4.8 -std=c++11 -Wall -Wextra -pedantic src/C5/euclid.c && ./a.out
+    - g++-4.8 -std=c++11 -Wall -Wextra -pedantic src/cTest.c && ./a.out
 install:
     - sudo add-apt-repository --yes ppa:ubuntu-toolchain-r/test
     - sudo apt-get -qq update
