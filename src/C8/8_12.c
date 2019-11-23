@@ -20,8 +20,6 @@ int _print(const char txt[], const char pat[], int txt_len, int pat_len, int pt,
 	printf("pt=%d pp=%d",pt,pp);//テキスト
 	putchar('\n');
 
-	
-
 	printf("%*s%c\n", pt*2+4, "", (txt[pt] == pat[pp]) ? '+' : '|');
 
 	printf("%*s", (pt-pp)*2+4, "");

@@ -8,8 +8,8 @@ void recur(int n){
 }
 int wmain(void){
 	int x;
-	printf("®”‚ğ“ü—Í‚¹‚æF");
-	scanf_s("%d",&x);
+	printf("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í‚ï¿½ï¿½ï¿½F");
+	scanf("%d",&x);
 	recur(x);
 	return 0;
 }

@@ -8,14 +8,14 @@ int hmain()
   int x; 
 
   int factorial = 1; 
-  printf("®”‚ğ“ü—Í‚¹‚æF");
-	scanf_s("%d",&x);
+  printf("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í‚ï¿½ï¿½ï¿½F");
+	scanf("%d",&x);
 
   for(i=1; i<=x; i++) { 
     factorial = factorial * i; 
   }
 
-  printf("%d‚ÌŠKæ‚Í%d‚Å‚·B\n",x,factorial);
+  printf("%dï¿½ÌŠKï¿½ï¿½ï¿½%dï¿½Å‚ï¿½ï¿½B\n",x,factorial);
 
   return 0; 
 } 

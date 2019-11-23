@@ -8,9 +8,9 @@ int factorial(int n){
 }
 int fmain(void){
 	int x;
-	printf("®”‚ğ“ü—Í‚¹‚æF");
-	scanf_s("%d",&x);
+	printf("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í‚ï¿½ï¿½ï¿½F");
+	scanf("%d",&x);
 
-	printf("%d‚ÌŠKæ‚Í%d‚Å‚·B\n",x,factorial(x));
+	printf("%dï¿½ÌŠKï¿½ï¿½ï¿½%dï¿½Å‚ï¿½ï¿½B\n",x,factorial(x));
 	return 0;
 }

@@ -11,11 +11,11 @@ typedef enum {
 Menu SelectMenu(void)
 {
 	int  i, ch;
-	char *mstring[] = {	"æ“ª‚Éƒm[ƒh‚ğ‘}“ü", "––”ö‚Éƒm[ƒh‚ğ‘}“ü",	"æ“ª‚Ìƒm[ƒh‚ğíœ",
-		"––”ö‚Ìƒm[ƒh‚ğíœ", "’…–Úƒm[ƒh‚ğ•\¦",	"’…–Úƒm[ƒh‚ğíœ",
-		"”Ô†‚Å’Tõ",		  "–¼‚Å’Tõ",			"‘Sƒm[ƒh‚ğ•\¦",
-		"‘Sƒm[ƒh‚ğíœ",	  "”Ô†“¯ˆêƒm[ƒhíœ", "–¼“¯ˆêƒm[ƒhíœ",
-		"n”Ô–Ú‚Ìƒm[ƒh"
+	char *mstring[] = {	"ï¿½æ“ªï¿½Éƒmï¿½[ï¿½hï¿½ï¿½}ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½ï¿½Éƒmï¿½[ï¿½hï¿½ï¿½}ï¿½ï¿½",	"ï¿½æ“ªï¿½Ìƒmï¿½[ï¿½hï¿½ï¿½ï¿½íœ",
+		"ï¿½ï¿½ï¿½ï¿½ï¿½Ìƒmï¿½[ï¿½hï¿½ï¿½ï¿½íœ", "ï¿½ï¿½ï¿½Úƒmï¿½[ï¿½hï¿½ï¿½\ï¿½ï¿½",	"ï¿½ï¿½ï¿½Úƒmï¿½[ï¿½hï¿½ï¿½ï¿½íœ",
+		"ï¿½Ôï¿½ï¿½Å’Tï¿½ï¿½",		  "ï¿½ï¿½ï¿½ï¿½ï¿½Å’Tï¿½ï¿½",			"ï¿½Sï¿½mï¿½[ï¿½hï¿½ï¿½\ï¿½ï¿½",
+		"ï¿½Sï¿½mï¿½[ï¿½hï¿½ï¿½ï¿½íœ",	  "ï¿½Ôï¿½ï¿½ï¿½ï¿½ï¿½mï¿½[ï¿½hï¿½íœ", "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½mï¿½[ï¿½hï¿½íœ",
+		"nï¿½Ô–Ú‚Ìƒmï¿½[ï¿½h"
 	};
 
 	do {
@@ -24,8 +24,8 @@ Menu SelectMenu(void)
 			if ((i % 3) == 2)
 				putchar('\n');
 		}
-		printf("( 0) I—¹ F");
-		scanf_s("%d", &ch);
+		printf("( 0) ï¿½Iï¿½ï¿½ ï¿½F");
+		scanf("%d", &ch);
 	} while (ch < TERMINATE || ch > CLEAR);
 
 	return (Menu)ch;
@@ -40,12 +40,12 @@ int main(void){
 		Member x;
 		switch (menu=SelectMenu())		{
 		case INS_FRONT:
-			x=ScanMember("æ“ª‚É‘}“ü",MEMBER_NO | MEMBER_NAME);
+			x=ScanMember("ï¿½æ“ªï¿½É‘}ï¿½ï¿½",MEMBER_NO | MEMBER_NAME);
 			InsertFront(&list,&x);	
 			break;
 
 		case INS_REAR:
-			x=ScanMember("–¢”ö‚É‘}“ü",MEMBER_NO | MEMBER_NAME);
+			x=ScanMember("ï¿½ï¿½ï¿½ï¿½ï¿½É‘}ï¿½ï¿½",MEMBER_NO | MEMBER_NAME);
 			InsertRear(&list,&x);
 			break;
 
@@ -62,19 +62,19 @@ int main(void){
 			break;
 
 		case SRCH_NO:
-			x=ScanMember("’Tõ",MEMBER_NO);
+			x=ScanMember("ï¿½Tï¿½ï¿½",MEMBER_NO);
 			if(Search(&list,&x,MemberNoCmp)!=NULL)
 				PrintLnCurrent(&list);
 			else
-				puts("‚»‚Ì”Ô†‚Ìƒf[ƒ^‚Í‚ ‚è‚Ü‚¹‚ñB");
+				puts("ï¿½ï¿½ï¿½Ì”Ôï¿½ï¿½Ìƒfï¿½[ï¿½^ï¿½Í‚ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½B");
 			break;
 
 		case SRCH_NAME:
-			x=ScanMember("’Tõ",MEMBER_NAME);
+			x=ScanMember("ï¿½Tï¿½ï¿½",MEMBER_NAME);
 			if(Search(&list,&x,MemberNameCmp)!=NULL)
 				PrintLnCurrent(&list);
 			else
-				puts("‚»‚Ì–¼‘O‚Ìƒf[ƒ^‚Í‚ ‚è‚Ü‚¹‚ñB");
+				puts("ï¿½ï¿½ï¿½Ì–ï¿½ï¿½Oï¿½Ìƒfï¿½[ï¿½^ï¿½Í‚ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½B");
 				break;
 
 		case PRINT_CRNT:

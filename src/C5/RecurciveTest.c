@@ -10,7 +10,7 @@ Menu SelectMenu(void){
 	do
 	{
 		printf("(1)階乗　(2)最大公約数　(3)階乗2　(4)最大公約数2　(5)解析　(0)終了");
-		scanf_s("%d",&ch);
+		scanf("%d",&ch);
 
 	} while (ch< TERMINATE || ch>RECUR);
 	return (Menu)ch;

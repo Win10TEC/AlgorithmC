@@ -18,10 +18,10 @@ int gmain(void){
 
 	puts("2つの整数の最大公約数を求めます。");
 	printf("整数を入力せよ：");
-	scanf_s("%d",&x);
+	scanf("%d",&x);
 
 	printf("整数を入力せよ：");
-	scanf_s("%d",&y);
+	scanf("%d",&y);
 
 	printf("最大公約数は%dです。\n",gcd_s(x,y));
 
