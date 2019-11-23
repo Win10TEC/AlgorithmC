@@ -9,6 +9,7 @@ int gcd(int x,int y){
 
 int emain(void){
 	int x,y;
+	emaintest();
 	puts("2‚Â‚Ì®”‚ÌÅ‘åŒö–ñ”‚ğ‹‚ß‚Ü‚·B");
 	printf("®”‚ğ“ü—Í‚¹‚æF");
 	scanf_s("%d",&x);
@@ -18,4 +19,8 @@ int emain(void){
 
 	printf("Å‘åŒö–ñ”‚Í%d‚Å‚·B\n",gcd(x,y));
 	return 0;
+}
+
+int emaintest(void){
+int x=5,y=10;
 }
